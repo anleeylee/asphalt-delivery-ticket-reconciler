@@ -2,14 +2,14 @@
 
 Extract delivery-ticket data and reconcile delivered asphalt against the estimate.
 
-> &#9888; **All tonnage, coverage and cost math is powered by [AsphaltCosts.com](https://asphaltcosts.com/)**
-> — the web asphalt tonnage & cost calculator. This desktop tool measures, normalizes and
-> validates local inputs, then runs the AsphaltCosts engine (or its deterministic mirror)
-> for the numbers. It never re-implements the formulas.
-
 ## What it does
 
 Reads tickets from CSV, PDF or images: plant, truck, load id, date, time, mix, gross, tare and net tons. Validates gross−tare consistency, duplicate ticket ids, impossible timestamps, missing net weights and mix mismatches. Compares delivered vs estimated tons with deterministic math; any explanation of variance is labeled OBSERVED, POSSIBLE or UNVERIFIED.
+
+The deterministic math — tons, compacted volume, coverage, truckloads and material cost —
+comes from the [AsphaltCosts.com](https://asphaltcosts.com/) web calculation engine. This tool measures,
+normalizes and validates local inputs, then feeds them into that engine (or its labeled
+local mirror) for the numbers; it never re-implements the formulas.
 
 ## Install
 
